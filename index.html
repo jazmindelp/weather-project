@@ -48,7 +48,7 @@
         <div class="main-container">
           <div id="temp-container">
             <h1 class="city"></h1>
-            <div class="current-day">Monday, 16:39</div>
+            <div class="current-day"></div>
             <div class="temperature">
               <div class="current-temp">
                 <span class="temp-value"> </span>
@@ -60,7 +60,7 @@
                 alt="weather icon"
               />
             </div>
-            <p class="description">Broken clouds</p>
+            <p class="description"></p>
           </div>
 
           <div class="current-weather">
@@ -71,7 +71,10 @@
                 >Humidity
               </h3>
 
-              <p><span class="detail-number">92 </span><strong>%</strong></p>
+              <p>
+                <span class="detail-number" id="humidity-value"></span
+                ><strong> %</strong>
+              </p>
             </div>
             <div id="wind">
               <h3 class="detail-title">
@@ -80,7 +83,8 @@
               </h3>
 
               <p>
-                <span class="detail-number">6.17 </span><strong>km/h</strong>
+                <span class="detail-number" id="wind-speed"></span
+                ><strong> km/h</strong>
               </p>
             </div>
           </div>
