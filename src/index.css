@@ -93,6 +93,10 @@ body {
   text-transform: capitalize;
 }
 
+.current-weather-icon {
+  height: 120px;
+}
+
 .current-weather {
   display: flex;
   width: 50%;

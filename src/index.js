@@ -24,6 +24,10 @@ function getWeather(response) {
   let date = new Date(response.data.time * 1000);
   let currentDateElement = document.querySelector(".current-day");
   currentDateElement.innerHTML = formatDate(date);
+
+  //icon
+  let iconElement = document.querySelector(".current-weather-icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}"/>`;
 }
 
 function formatDate(date) {
