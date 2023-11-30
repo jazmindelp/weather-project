@@ -157,3 +157,34 @@ footer {
 a {
   color: #235666;
 }
+
+.forecast-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  width: 90px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forecast-day {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9f1104;
+}
+.forecast-icon {
+}
+.forecast-temperatures {
+  font-size: 13px;
+  font-weight: 600;
+}
+.max-temp {
+  margin-right: 4px;
+}
+.min-temp {
+  opacity: 0.65;
+}
