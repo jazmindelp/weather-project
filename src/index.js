@@ -69,3 +69,34 @@ let searchFormElement = document.querySelector(".search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
 searchCity("London");
+
+function displayForecast() {
+  let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
+
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-container"><div class="row">
+            <div class="col-2">
+              <div class="forecast-day">${day}</div>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                alt="weahter icon"
+                width="70"
+                class="forecast-icon"
+              />
+              <div class="forecast-temperatures">
+                <span class="max-temp">38°</span>
+                <span class="min-temp">10°</span>
+              </div>
+            </div>
+          </div>
+          </div>`;
+  });
+  let forecast = document.querySelector(".forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
+displayForecast();
